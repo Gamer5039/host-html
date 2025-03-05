@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnijatinMedia App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #121212;
+            color: #fff;
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: #1E1E1E;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        .hero {
+            padding: 50px;
+            background: linear-gradient(to right, #1E1E1E, #292929);
+        }
+
+        .download-btn {
+            background: #ff9800;
+            padding: 12px 25px;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            display: inline-block;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .download-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 4px 10px rgba(255, 152, 0, 0.8);
+        }
+
+        .screenshots {
+            padding: 30px;
+            background: #1E1E1E;
+        }
+
+        .screenshot-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            padding: 10px;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .screenshot-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .screenshot-container img {
+            width: 90%;
+            max-width: 300px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .screenshot-container img:hover {
+            transform: scale(1.05);
+        }
+
+        .features {
+            padding: 30px;
+        }
+
+        .feature-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            background: #1E1E1E;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            width: 250px;
+            text-align: center;
+        }
+
+        .feature:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .feature i {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #ff9800;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+            flex-wrap: wrap;
+        }
+
+        .stat-card {
+            background: #1E1E1E;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            text-align: center;
+            width: 180px;
+        }
+
+        .stat-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .stat-card h3 {
+            font-size: 18px;
+        }
+
+        .stat-card p {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff9800;
+        }
+
+        .contact {
+            padding: 20px;
+            background: #1E1E1E;
+        }
+
+        .contact a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 10px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .contact a:hover {
+            color: #ff9800;
+        }
+
+        .contact i {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://i.postimg.cc/8c1j3jpK/Picsart-25-03-04-16-18-43-373.png" alt="App Logo">
+            <h1>AnijatinMedia</h1>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h2>Experience Competitive Gaming Like Never Before!</h2>
+        <p>Join thousands of users in exciting Free Fire Max tournaments.</p>
+        <a href="https://www.4shared.com/mobile/yK8QzQtojq/Anijatinmedia_V16__2_.html" class="download-btn">Download APK</a>
+    </header>
+
+    <section class="screenshots">
+        <h2>App Screenshots</h2>
+        <div class="screenshot-container">
+            <img src="https://i.postimg.cc/MT3CkLxC/Screenshot-20250304-160202.jpg" alt="Screenshot 1">
+            <img src="https://i.postimg.cc/G2BCpRML/Screenshot-20250304-160207.jpg" alt="Screenshot 2">
+            <img src="https://i.postimg.cc/D0VtyXJ6/Screenshot-20250304-160217.jpg" alt="Screenshot 3">
+            <img src="https://i.postimg.cc/XvGHGv0z/Screenshot-20250304-160222.jpg" alt="Screenshot 4">
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stat-card">
+            <h3>App Users</h3>
+            <p id="users-count">0</p>
+        </div>
+        <div class="stat-card">
+            <h3>Winning Amount</h3>
+            <p id="winning-count">0</p>
+        </div>
+        <div class="stat-card">
+            <h3>Trusted Users</h3>
+            <p>✅</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>📞 <b>Phone:</b> 8434615841</p>
+        <p><a href="https://www.instagram.com/anijatinmediaapp"><i class="fab fa-instagram"></i> Instagram</a></p>
+        <p><a href="https://youtube.com/@anijatinmediaofficial"><i class="fab fa-youtube"></i> YouTube</a></p>
+    </section>
+
+    <script>
+        function animateCount(id, start, end, duration) {
+            let obj = document.getElementById(id);
+            let range = end - start;
+            let increment = range / (duration / 10);
+            let current = start;
+
+            let timer = setInterval(() => {
+                current += increment;
+                obj.innerHTML = Math.floor(current) + "+";
+                if (current >= end) {
+                    clearInterval(timer);
+                }
+            }, 10);
+        }
+
+        animateCount("users-count", 0, 3000, 2000);
+        animateCount("winning-count", 0, 10000, 2000);
+    </script>
+</body>
+</html>
